@@ -1,0 +1,59 @@
+﻿@using CoffeeShop.Models
+@model IEnumerable<SANPHAM>
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="about-img" sstyle="background-color: #a04f20 ;">
+    <div class="rotate-left bg-dark" style="width: 200%; height: 200%; position: absolute; top: 54%; left: -83%; rotate: 25deg; z-index: 3;"></div>
+    <div class="rotate-right bg-secondary" style="width: 200%; height: 200%; position: absolute; left: 0%; rotate: -30deg; right: -10%; z-index: 2;top:4%; z-index:3 }"></div>
+    <div class="" style="background-color:saddlebrown;"></div>
+    <div class="container-fluid py-5">
+        <div class="container py-5" style="max-width: 100%; /* margin-left: 30px; */ position: relative; padding: 100px;z-index:2;">
+            <div class="content-top" style="background-color: #fdf001; z-index: 2">
+                <h2 style="color:black; margin-left: 10px; font-size: 30px;text-align:center;">TRÀ BEST-SELLER</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                @Html.Action("Tra", "Home");
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container py-5" style="max-width: 100%; /* margin-left: 30px; */ position: relative; padding: 100px; z-index: 3;">
+            <div class="content-top" style="background-color: black; z-index: 2">
+                <h2 style="color: white; margin-left: 10px; font-size: 30px;text-align:center;">COFFEE BEST-SELLER</h2>
+            </div>
+
+            <div class="row" >
+                <div class="col-sm-1"></div>
+                @Html.Action("Coffe", "Home");
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container py-5" style="max-width: 100%; /* margin-left: 30px; */ position: relative; padding: 100px; z-index: 3;">
+            <div class="content-top" style="background-color: #fdf001; z-index: 2">
+                <h2 style="color: black; margin-left: 10px; font-size: 30px;text-align:center;">ĐÁ XAY BEST-SELLER</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                @Html.Action("Daxay", "Home");
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+
+</div>
+<div class="" >
+    
+
+
+</div>

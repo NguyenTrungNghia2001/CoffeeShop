@@ -1,0 +1,273 @@
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\CoffeeShop.dll.config
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\CoffeeShop.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\CoffeeShop.pdb
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\csc.exe
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\csc.exe.config
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\csc.rsp
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\csi.exe
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\csi.exe.config
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\csi.rsp
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.AppContext.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Collections.Immutable.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Console.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Globalization.Calendars.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.Compression.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.FileSystem.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Net.Http.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Net.Sockets.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Reflection.Metadata.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.ValueTuple.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XPath.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\vbc.exe
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\vbc.exe.config
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\vbc.rsp
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\VBCSCompiler.exe
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\roslyn\VBCSCompiler.exe.config
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\Antlr3.Runtime.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\Microsoft.Web.Infrastructure.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\Newtonsoft.Json.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Helpers.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Mvc.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Optimization.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Razor.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Deployment.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Razor.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\WebGrease.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Helpers.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Mvc.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Optimization.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.Razor.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Deployment.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Razor.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\Newtonsoft.Json.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\Antlr3.Runtime.pdb
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.AssemblyReference.cache
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.CoreCompileInputs.cache
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.CopyComplete
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\EntityFramework.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\EntityFramework.SqlServer.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\EntityFramework.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\EntityFramework.SqlServer.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\PagedList.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\PagedList.Mvc.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\PagedList.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\PagedList.Mvc.xml
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\CKFinder.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\CKFinder.pdb
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\PayPal.dll
+E:\NghiaNe\CoffeeShop\CoffeeShop\CoffeeShop\bin\PayPal.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\CoffeeShop.dll.config
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\CoffeeShop.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\CoffeeShop.pdb
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\csc.exe
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\csc.exe.config
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\csc.rsp
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\csi.exe
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\csi.exe.config
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\csi.rsp
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.AppContext.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Collections.Immutable.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Console.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.Compression.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.FileSystem.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Net.Http.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Net.Sockets.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.ValueTuple.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XPath.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\vbc.exe
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\vbc.exe.config
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\vbc.rsp
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\VBCSCompiler.exe
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\roslyn\VBCSCompiler.exe.config
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\Antlr3.Runtime.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\CKFinder.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\EntityFramework.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\EntityFramework.SqlServer.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\Microsoft.Web.Infrastructure.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\Newtonsoft.Json.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\PagedList.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\PagedList.Mvc.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\PayPal.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Helpers.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Mvc.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Optimization.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Razor.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Deployment.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Razor.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\WebGrease.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\CKFinder.pdb
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\EntityFramework.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\EntityFramework.SqlServer.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\PagedList.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\PagedList.Mvc.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\PayPal.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Helpers.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Mvc.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Optimization.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.Razor.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Deployment.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Razor.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\Newtonsoft.Json.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\Antlr3.Runtime.pdb
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.AssemblyReference.cache
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.CoreCompileInputs.cache
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.CopyComplete
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.dll
+D:\CNPM\TMĐT\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\CoffeeShop.dll.config
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\CoffeeShop.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\CoffeeShop.pdb
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\csc.exe
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\csc.exe.config
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\csc.rsp
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\csi.exe
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\csi.exe.config
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\csi.rsp
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Managed.Core.targets
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.AppContext.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Collections.Immutable.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Console.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Globalization.Calendars.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.Compression.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.FileSystem.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Net.Http.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Net.Sockets.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Reflection.Metadata.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.ValueTuple.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XmlDocument.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XPath.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\vbc.exe
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\vbc.exe.config
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\vbc.rsp
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\VBCSCompiler.exe
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\roslyn\VBCSCompiler.exe.config
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\Antlr3.Runtime.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\CKFinder.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\EntityFramework.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\EntityFramework.SqlServer.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\Microsoft.Web.Infrastructure.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\Newtonsoft.Json.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\PagedList.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\PagedList.Mvc.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\PayPal.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Helpers.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Mvc.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Optimization.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Razor.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Deployment.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Razor.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\WebGrease.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\CKFinder.pdb
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\EntityFramework.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\EntityFramework.SqlServer.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\PagedList.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\PagedList.Mvc.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\PayPal.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Helpers.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Mvc.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Optimization.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.Razor.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Deployment.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\System.Web.WebPages.Razor.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\Newtonsoft.Json.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\Antlr3.Runtime.pdb
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.AssemblyReference.cache
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.CoreCompileInputs.cache
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.csproj.CopyComplete
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.dll
+E:\NghiaNe\CoffeShop 2\CoffeeShop\CoffeeShop\obj\Debug\CoffeeShop.pdb

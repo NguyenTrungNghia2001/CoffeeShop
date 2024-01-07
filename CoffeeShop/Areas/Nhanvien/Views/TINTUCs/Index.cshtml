@@ -1,0 +1,57 @@
+﻿@model IEnumerable<CoffeeShop.Models.TINTUC>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="content-wrapper">
+    <div class="container" style="max-width:100%;">
+
+        <button class="btn" style="margin:20px">
+            <a> @Html.ActionLink("Create New", "Create", new { @class = "btn mt-4" })</a>
+        </button>
+
+        <table cellpadding="0" cellspacing="0" border="0" class="sortable">
+
+            <tr class="tbl-header">
+                <th>
+                    @Html.DisplayNameFor(model => model.TIEUDE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NGAYDANG)
+                </th>
+                <th></th>
+            </tr>
+
+
+            @foreach (var item in Model)
+            {
+                <tr class="item tbl-content">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TIEUDE)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NGAYDANG)
+                    </td>
+                    <td>
+                        <button class="btn">@Html.ActionLink("Sửa", "Edit", new { id = item.IDTINTUC })</button> |
+                        <button class="btn">@Html.ActionLink("Xoá", "Delete", new { id = item.IDTINTUC })</button>
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+
+
+</div>
+
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<link rel="stylesheet" href="~/css/StyleLog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-boostrap/4.5.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+
+<script src="~/js/AdminJs.js"></script>
+<link rel="stylesheet" href="~/css/AdminStyle.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" />

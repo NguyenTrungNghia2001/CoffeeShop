@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CoffeeShop.Models.LOAISP>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Nhanvien/Views/Shared/_LayoutNhanvien.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="container" style="max-width:100%;">
+
+        <button class="btn" style="margin:20px">
+            <a> @Html.ActionLink("Create New", "Create", new { @class = "btn mt-4" })</a>
+        </button>
+
+        <table cellpadding="0" cellspacing="0" border="0" class="sortable">
+
+            <tr class="tbl-header">
+                <th>
+                    @Html.DisplayNameFor(model => model.TENLSP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MOTA)
+                </th>
+                <th></th>
+            </tr>
+
+
+            @foreach (var item in Model)
+            {
+                <tr class="item tbl-content">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TENLSP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MOTA)
+                    </td>
+                    <td>
+                        <button class="btn">@Html.ActionLink("Sửa", "Edit", new { id = item.MALSP })</button> |
+                        <button class="btn">@Html.ActionLink("Xoá", "Delete", new { id = item.MALSP })</button>
+                    </td>
+                </tr>
+            }
+
+
+        </table>
+    </div>
+
+
+</div>
+
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<link rel="stylesheet" href="~/css/StyleLog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-boostrap/4.5.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+
+<script src="~/js/AdminJs.js"></script>
+<link rel="stylesheet" href="~/css/AdminStyle.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" />

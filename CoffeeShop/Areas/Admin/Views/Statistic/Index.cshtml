@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="card card-success">
+    <div class="card-header">
+        <h3 class="card-title">THỐNG KÊ DOANH THU</h3>
+
+    
+    </div>
+    <div class="card-body">
+        <div class="col-md-8">
+            <div class="chart">
+                <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+            </div>
+        </div>
+       <div class="col-md-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Ngày</th>
+                        <th>Doanh Thu</th>
+                    </tr>
+                </thead>
+                <tbody id="load_data"></tbody>
+            </table>
+        </div>
+       
+    </div>
+    <!-- /.card-body -->
+</div>
+
+
+    <!-- ChartJS -->
+<script src="~/Chart/plugins/chart.js/Chart.min.js"></script>
+<script src="~/Chart/jquery/jquery.slim.min.js"></script>
+<script src="~/Chart/plugins/moment/moment.min.js"></script>
+
+    
+<script>
+    $(function () {
+        var arrDoanhThu = [];
+        var arrDate = [];
+        $.ajax({
+            url: '/Statistic/GetStatistical',
+            type: 'GET',
+            data: {fromDate:'',toDate:''},
+            success: function (rs) {
+
+                $.each(rs.Data, function (i, item) {
+
+                    var strDate = moment(item.Date).format('yyyy/MM');
+
+                    arrDate.push(strDate);
+                    arrDoanhThu.push(item.DoanhThu);
+                });
+                var areaChartData = {
+                    labels: arrDate,
+                    datasets: [
+                        {
+                            label: 'Doanh thu theo tháng',
+                            backgroundColor: 'rgba(60,141,188,0.9)',
+                            borderColor: 'rgba(60,141,188,0.8)',
+                            pointRadius: false,
+                            pointColor: '#3b8bba',
+                            pointStrokeColor: 'rgba(60,141,188,1)',
+                            pointHighlightFill: '#fff',
+                            pointHighlightStroke: 'rgba(60,141,188,1)',
+                            data: arrDoanhThu
+                        },
+
+                    ]
+                }
+
+                var areaChartOptions = {
+                    maintainAspectRatio: false,
+                    responsive: true,
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                display: false,
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                display: false,
+                            }
+                        }]
+                    }
+                }
+
+
+
+
+                //-------------
+                //- BAR CHART -
+                //-------------
+                var barChartCanvas = $('#barChart').get(0).getContext('2d')
+                var barChartData = $.extend(true, {}, areaChartData)
+                var temp0 = areaChartData.datasets[0]
+
+                barChartData.datasets[0] = temp0
+
+
+                var barChartOptions = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    datasetFill: false
+                }
+
+                new Chart(barChartCanvas, {
+                    type: 'bar',
+                    data: barChartData,
+                    options: barChartOptions
+                });
+                load_data(rs.Data);
+            }
+
+        });
+
+
+       
+    })
+    function load_data(data) {
+        var strHtml = " ";
+        $.each(data, function (i, item) {
+            var strDate = moment(item.Date).format('yyyy/MM');
+            strHtml += "<tr>";
+            strHtml += "<td>" + (i + 1) + "</td>";
+            strHtml += "<td>" + item.Date + "</td>";
+            strHtml += "<td>" + item.DoanhThu+"</td>";
+                strHtml += "</tr>";
+        });
+    }
+  
+</script>

@@ -1,0 +1,135 @@
+﻿@using CoffeeShop.Models
+@model List<MatHangMua>
+
+@{
+    ViewBag.Title = "DongYDatHangSAUTT";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    KHACHHANG khach = Session["TaiKhoan"] as KHACHHANG;
+    GIOHANG DonHang = new GIOHANG();
+}
+
+<h2>BẠN ĐÃ THANH TOÁN THÀNH CÔNG VUI LÒNG XÁC NHẬN ĐẶT HÀNG</h2>
+<h2 style="text-align:center">THÔNG TIN GIỎ HÀNG</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã Sản phẩm</th>
+            <th>Tên Sản phẩm</th>
+            <th>Ảnh bìa</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.MaSP</td>
+                <td>@product.TenSP</td>
+                <td> <img src="~/img/@product.HINHANH" style="width:20%" /></td>
+                <td>@product.Quantity</td>
+                <td>@String.Format("{0:0,0}", product.GIASP)</td>
+                <td>@String.Format("{0:0,0}", product.ThanhTien())</td>
+            </tr>
+        }
+        <tr style="font-weight:bold; text-align:right; color:red;">
+            <td colspan="4">Tổng số lượng: @ViewBag.TongSL</td>
+            <td colspan="5">Tổng tiền: @ViewBag.TongTien</td>
+        </tr>
+    </tbody>
+</table>
+<h2 style="text-align:center">THÔNG TIN KHÁCH HÀNG</h2>
+@if (khach == null)
+{
+
+
+    <h2 style="text-align: center">ĐĂNG KÝ THÀNH VIÊN</h2>
+    <br />
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+            @using (Html.BeginForm("DongYDatHangKDN", "GioHang"))
+            {
+                @Html.ValidationSummary(true){ <div class="form-group">
+                        <label for="name">Họ và Tên:</label>
+                        @Html.TextBox("TenNguoiNhan", null, new
+                        {
+                            @class = "form-control",
+
+                        })
+                    </div>
+                    <div class="form-group">
+                        <label for="DC">Địa Chỉ giao hàng:</label>
+                        @Html.TextBox("AddressDeliverry", null, new
+                        {
+                            @class = "form-control",
+
+                        })
+                    </div>
+                    <div class="form-group">
+                        <label for="DT">Điện thoại nhận:</label>
+                        @Html.TextBox("DienThoaiNhan", 1, new
+                        {
+                            @class = "form-control",
+
+                        })
+                    </div>
+
+
+                }
+
+                <button type="submit" class="btn btn-primary" href="@Url.Action("ĐỒNG Ý ĐẶT HÀNG", "DongYDatHangKDN")"> Đồng ý đặt hàng</button>
+            }
+        </div>
+    </div>
+
+
+
+
+}
+else
+{
+    <table class="table table-bordered">
+        <tr>
+            <td>Họ tên: </td>
+            <td>@khach.TenKH</td>
+        </tr>
+        <tr>
+            <td>Địa chỉ: </td>
+            <td>@khach.DiaChiKH</td>
+        </tr>
+        <tr>
+            <td>Điện thoại: </td>
+            <td>@khach.SDTKH</td>
+        </tr>
+        <tr>
+            <td>Ngày đặt: </td>
+            <td>@DateTime.Now.ToShortDateString()</td>
+        </tr>
+        @using (Html.BeginForm("DongYDatHang", "GioHang"))
+        {
+            <tr>
+                <td>Vui lòng chọn hình thức thanh toán: </td>
+                <td>
+
+
+                  
+                    @Html.RadioButton("HTThanhToan", 2, new { @value = "2" , @checked = "checked", @onclick = "hideShowJacks('Y')" }) Thanh toán online
+
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" class="btn btn-primary" href="@Url.Action("ĐỒNG Ý ĐẶT HÀNG", "DongYDatHang")"> Đồng ý đặt hàng</button>
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+
+
+

@@ -1,0 +1,167 @@
+﻿@model CoffeeShop.Models.KHACHHANG
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="section">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3">
+                        <span>Đăng nhập</span>
+                        <span>Đăng ký</span>
+                    </h6>
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                    <label for="reg-log"></label>
+                    
+                        <div class="card-3d-wrap mx-auto">
+
+
+                            
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    @using (Html.BeginForm("DangNhap", "NguoiDung", new { @class = "card-front" }))
+                                    {
+                                        @Html.ValidationSummary(true)
+                                        <h2 style="color: red;">@ViewBag.ThongBao</h2>
+                                        <div class="center-wrap">
+                                            <div class="section text-center">
+
+                                                <h4 class="mb-4 pb-3" style="color: #ffeba7;">Đăng nhập</h4>
+                                                <div class="form-group">
+
+  
+                                                    <i class="input-icon uil uil-user"></i>
+                                                    @Html.TextBox("EmailKH", null, new
+                                               {
+                                                   @class = "form-style",
+                                                   @id = "logemail",
+                                                   required = "required",
+                                                   @type = "logemail",
+                                                   @placeholder = "Tên Đăng Nhập (Email)",
+                                                   @autocomplete = "off",
+                                                   @name = "logpass"
+                                               })
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                    @Html.Password("PassKH", null, new
+                                               {
+                                                   @class = "form-style",
+                                                   @id = "logpass",
+                                                   required = "required",
+                                                   @type = "password",
+                                                   @placeholder = "Mật khẩu",
+                                                   @autocomplete = "off",
+                                                   @name = "logpass"
+                                               })
+                                                </div>
+                                                <button type="submit" class="btn mt-4">Submit</button>
+                                                <p class="mb-0 mt-4 text-center"><a href="#" class="link">Quên mật khẩu ?</a></p>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="card-3d-wrapper">
+
+                                <div class="card-back">
+                                    @using (Html.BeginForm("DangKy", "NguoiDung", new { @class = "card-back" }))
+                                    {
+                                        <div class="center-wrap">
+                                            <div class="section text-center">
+                                                <h4 class="mb-4 pb-3" style="color: #ffeba7; margin-top:30px;">
+                                                    Đăng ký
+                                                </h4>
+                                                <div class="form-group">
+                                                    @Html.TextBox("TenKH", null, new
+                                               {
+                                                   @class = "form-style",
+                                                   @id = "name",
+                                                   @placeholder = "Họ và Tên",
+                                                   required = "required",
+                                                   @autocomplete = "off",
+                                               })
+                                                    <i class="input-icon uil uil-user"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    @Html.TextBox("EmailKH", null, new
+                                               {
+                                                   @class = "form-style",
+                                                   @id ="dangnhap",
+                                                   @placeholder = "Tên đăng nhập (email)",
+                                                   required = "required",
+                                                   @autocomplete = "off",
+                                               })
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    @Html.Password("PassKH", null, new
+                                               {
+                                                   @class = "form-style",
+                                                   @id = "matkhau",
+                                                   @placeholder = "Mật khẩu",
+                                                   required = "required",
+                                                   @autocomplete = "off",
+                                               })
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    @Html.TextBox("DiaChiKH", null, new
+                                               {
+                                                   @class = "form-style",
+                                                   @id =
+"diachi",
+                                                   @placeholder = "Địa chỉ",
+                                                   @autocomplete = "off",
+
+                                               })
+                                                    <iconify-icon icon="uil:map-marker" class="input-icon" style="margin-top: 13px; margin-left: 5px;"></iconify-icon>  
+                                                    
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    @Html.TextBox("SDTKH", null, new
+                                               {
+                                                   @class = "form-style",
+                                                   @id =
+"dienthoai",
+                                                   @placeholder = "Số Điện Thoại",
+                                                   required = "required",
+                                                   @autocomplete = "off",
+                                               })
+                                                    <iconify-icon icon="uil:calling" class="input-icon" style="margin-top: 13px; margin-left: 5px;"></iconify-icon>
+                                                </div>
+                                                @Html.TextBox("MALKH", 1, new
+{
+
+    @class = "form-control",
+    @id =
+"loaikhachhang",
+    require = "required",
+    @style = "display:none;"
+})
+                                                <button type="submit" class="btn mt-4">Submit</button>
+                                            </div>
+                                        </div>
+                                    }
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/css/StyleLog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-boostrap/4.5.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" />
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

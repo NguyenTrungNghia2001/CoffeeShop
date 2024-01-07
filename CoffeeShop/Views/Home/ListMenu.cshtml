@@ -1,0 +1,10 @@
+﻿@using CoffeeShop.Models
+@model IEnumerable<LOAISP>
+@foreach (var category in Model)
+{
+    <li>
+        <a href="@Url.Action("SanPhamLoai", "Home", new { id = category.MALSP })" class="dropdown-item">
+            @category.TENLSP
+        </a>
+    </li>
+}

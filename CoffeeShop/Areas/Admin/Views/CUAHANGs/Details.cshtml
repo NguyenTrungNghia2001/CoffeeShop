@@ -1,0 +1,53 @@
+﻿@model CoffeeShop.Models.CUAHANG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CUAHANG</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDCH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDCH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SLNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoanhThu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoanhThu)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KHOHANG.TENNLKHO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KHOHANG.TENNLKHO)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DiaChiCH }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

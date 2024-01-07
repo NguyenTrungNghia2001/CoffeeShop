@@ -1,0 +1,188 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.u-tabs:not([class*="u-align-"]), .u-accordion:not([class*="u-align-"]), .u-repeater-item:not([class*="u-align-"]), .u-container-style:not([class*="u-align-"]) {
+    text-align: left;
+}
+
+.wrapper {
+    max-width: 83%;
+    width: 100%;
+    position: relative;
+}
+
+    .wrapper i {
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+    }
+
+        .wrapper i:active {
+            transform: translateY(-50%) scale(0.85);
+        }
+
+        .wrapper i:first-child {
+            left: -70px;
+        }
+
+        .wrapper i:last-child {
+            right: -70px;
+        }
+
+    .wrapper .carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        border-radius: 8px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+    .carousel.dragging .card {
+        cursor: grab;
+        user-select: none;
+    }
+
+.carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+    .carousel .card .img {
+        background: #8B53FF;
+        height: 148px;
+        width: 148px;
+        border-radius: 50%;
+    }
+
+.card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+.u-repeater-item {
+    display: flex;
+    position: relative;
+}
+.u-section-1 .u-container-layout-1 {
+    padding: 30px;
+}
+.u-valign-bottom {
+    justify-content: flex-end;
+}
+.u-section-1 .u-image-1 {
+    height: 306px;
+    width: 313px;
+    margin: 0 auto;
+}
+.u-section-1 .u-text-1 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 21px 0 0;
+}
+.u-text:not(ul):not(ol):not(p):not(.u-post-content):not(.u-block-content):not(.u-product-desc):not(.u-cart-block-content):not(.u-checkout-block-content) a, .u-text:not(ul):not(ol):not(p):not(.u-post-content):not(.u-block-content):not(.u-product-desc):not(.u-cart-block-content):not(.u-checkout-block-content) a:hover {
+    text-decoration: none;
+}
+.u-section-1 .u-text-2 {
+    margin: 41px 0 0;
+}
+.u-text {
+    word-wrap: break-word;
+    position: relative;
+}
+.u-section-1 .u-product-price-1 {
+    margin: 41px auto 0 0;
+}
+.u-product-price {
+    display: table;
+}
+.u-price-wrapper {
+    display: flex;
+}
+
+.u-section-1 .u-btn-1 {
+    font-size: 0.875rem;
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: none;
+    margin: -42px 0 0 auto;
+}
+.content-top {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    max-width: 50%;
+    margin-left: 25%;
+}

@@ -1,0 +1,43 @@
+﻿@model CoffeeShop.Models.NGUYENLIEU
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NGUYENLIEU</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TENNL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENNL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SOLUONGTON)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SOLUONGTON)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOAINGUYENLIEU.TenLNL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAINGUYENLIEU.TenLNL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDNL }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

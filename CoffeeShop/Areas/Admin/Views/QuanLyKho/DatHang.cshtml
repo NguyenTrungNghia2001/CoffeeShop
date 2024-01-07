@@ -1,0 +1,68 @@
+﻿
+@using CoffeeShop.Models
+@model List<NLXUAT>
+@{
+    ViewBag.Title = "DatHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    HOADONNHAPXUAT DonHang = new HOADONNHAPXUAT();
+}
+
+<h2 style="text-align:center">THÔNG TIN GIỎ HÀNG</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã Nguyên liệu</th>
+            <th>Tên Nguyên liệu</th>
+            <th>Số lượng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.IdNLKHO</td>
+                <td>@product.TenNLKHO</td>
+                <td>@product.Quantity</td>
+
+            </tr>
+        }
+        <tr style="font-weight:bold; text-align:right; color:red;">
+            <td colspan="4">Tổng số lượng: @ViewBag.TongSL</td>
+        </tr>
+    </tbody>
+</table>
+<h2 style="text-align:center">THÔNG TIN KHÁCH HÀNG</h2>
+
+
+
+<h2 style="text-align: center">ĐĂNG KÝ THÀNH VIÊN</h2>
+<br />
+<div class="row">
+    <div class="offset-md-1 col-md-10">
+        @using (Html.BeginForm("DongYDatHangKDN", "GioHang"))
+        {
+            @Html.ValidationSummary(true){ <div class="form-group">
+                    <label for="name">Địa chỉ cửa hàng</label>
+                    @Html.DropDownList("IDCH", null, htmlAttributes: new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label for="DC">Mã Kho:</label>
+                    @Html.DropDownList("IDKHO", null, htmlAttributes: new { @class = "form-control" })
+                </div>
+                
+
+              
+
+            }
+            <button type="submit" class="btn btn-primary"> @Html.ActionLink("ĐỒNG Ý XUẤT HÀNG", "DongYXuatHang")</button>
+        }
+    </div>
+            </div>
+            
+</div>
+            
+
+
+
+
+

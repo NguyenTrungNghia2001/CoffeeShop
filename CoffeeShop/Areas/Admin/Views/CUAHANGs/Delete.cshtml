@@ -1,0 +1,73 @@
+﻿@model CoffeeShop.Models.CUAHANG
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CUAHANG</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDCH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDCH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SLNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoanhThu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoanhThu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CALAMVIEC1.TENCLV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CALAMVIEC1.TENCLV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KHOHANG.TENNLKHO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KHOHANG.TENNLKHO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SANPHAM.TENSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SANPHAM.TENSP)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="30c224d44ad5495c944ca6583d87e7da" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="QLCFModel.ADMINuser" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.CALAMVIEC" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.CHITIETGIOHANG" Width="1.5" PointX="10.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.CHITIETHOADON" Width="1.5" PointX="12.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.CHITIETHOADONNHAPXUAT" Width="1.5" PointX="10.5" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.CHITIETLUONGNHANVIEN" Width="1.5" PointX="7.5" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.CongThuc" Width="1.5" PointX="13.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.CUAHANG" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.GIOHANG" Width="1.5" PointX="8.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.HOADON" Width="1.5" PointX="10.5" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.HOADONNHAPXUAT" Width="1.5" PointX="8.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.KHACHHANG" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.KHOHANG" Width="1.5" PointX="0.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.KHUYENMAI" Width="1.5" PointX="6" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.LISTLOVE" Width="1.5" PointX="10.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.LOAIKHACHHANG" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.LOAINGUYENLIEU" Width="1.5" PointX="3.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.LOAISP" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.NGUYENLIEU" Width="1.5" PointX="6" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.NGUYENLIEUKHO" Width="1.5" PointX="6" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.NHANVIEN" Width="1.5" PointX="5.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.SANPHAM" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCFModel.TINTUC" Width="1.5" PointX="2.75" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="QLCFModel.FK__CALAMVIEC__DiaCh__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CHITIETGIO__IDGH__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CHITIETGIO__MASP__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CHITIETHOA__IDHD__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CHITIETHOA__MASP__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CHITIETHO__IDNLK__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CHITIETHOA__IDHD__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK_IDNV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CongThuc__IDNL__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CongThuc__MASP__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__CUAHANG__IDKHO__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__HOADONNHA__DiaCh__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__NHANVIEN__DiaChi__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__SANPHAM__DiaChiC__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__GIOHANG__GIAMGIA__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__GIOHANG__IDKH__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__HOADON__IDNV__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__HOADON__MAKH__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK_MAGIAMGIA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__HOADONNHA__IDKHO__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__LISTLOVE__IDKH__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK_KHACHHANG_MALKH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__NGUYENLIE__IDKHO__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__LISTLOVE__IDSP__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__NGUYENLIE__IDLNL__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__NGUYENLIE__IDLNL__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__SANPHAM__LOAISP__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCFModel.FK__SANPHAM__IDNL__02084FDA" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

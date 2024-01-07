@@ -1,0 +1,41 @@
+﻿@using CoffeeShop.Models
+@model IEnumerable<SANPHAM>
+
+
+<div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <ul class="carousel">
+        @foreach (var sanpham in Model)
+        {
+            <li class="u-container-style u-products-item u-repeater-item">
+                <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+                    <!--product_image-->
+                    <img src="~/img/@sanpham.HINHANH" alt="" class="u-expanded-width-lg u-image u-image-contain u-image-default u-product-control u-image-1" 
+                         data-image-width="1230" data-image-height="1223" style="margin-top:20px;border-radius:10px;">
+                    <h4 class="u-product-control u-text u-text-1" style="color: yellow; background-color: black; border-radius: 10px; text-align: center;">
+                        <a class="u-product-title-link" href="@Url.Action("Detail", "Home", new {id = sanpham.MASP})">@sanpham.TENSP</a>
+                    </h4>
+                    <div class="u-product-control u-product-desc u-text u-text-2"><p style="color:white">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit nullam nunc justo sagittis suscipit ultrices</p></div>
+                    <div class="u-product-control u-product-price u-product-price-1" style="color: black; background-color: black; border-radius: 10px; text-align: center;">
+                        <div class="u-price-wrapper u-spacing-10">
+                            <div class="u-price" style="font-size: 1.25rem; font-weight: 700; color:yellow;">@sanpham.GIASP</div>
+                        </div>
+                    </div>
+                    <a href="@Url.Action("ThemSanPhamVaoGio", "GioHang", new { MaSP = sanpham.MASP })" class="u-active-grey-75 u-black 
+                       u-border-none u-btn u-button-style u-hover-grey-75 u-product-control u-btn-1 u-dialog-link u-payment-button" 
+                       style="background-color: none; color:Yellow">Add to cart</a>
+
+                </div>
+            </li>
+
+        }
+
+    </ul>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<script src="~/js/scriptList.js" defer></script>
+<link rel="stylesheet" href="~/css/styleList.css">
+

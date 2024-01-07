@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CoffeeShop.Models.GIOHANG>
+@{
+    ViewBag.Title = "LichSuDonHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lịch sử đơn hàng</h2>
+<div style="margin: 10px auto; width: 90%;">
+    <h2 style="text-align: center">THÔNG TIN ĐƠN HÀNG</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mã đơn hàng</th>
+                <th>Tình Trạng</th>
+
+                <th>Tên khách hàng</th>
+                <th>Phone</th>
+                <th>Tiền</th>
+                <th>Trạng thái</th>
+                <th>Ngày tạo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = ((ViewBag.Page - 1) * ViewBag.PageSize) + 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ID</td>
+                        <td><p style="color:red">@(item.TTrang == false? "ĐƠN HÀNG HUỶ" : "...")</p></td>
+
+                        <td>@item.TenNguoiNhan</td>
+                        <td>@item.DienThoaiNhan</td>
+                        <td>@item.Trigia.Value.ToString("###,###,##0")</td>
+                        <td>@(item.Dagiao == false?"Chờ nhận hàng":"Thành công")</td>
+                        <td>@item.NGAYDAT.Value.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            @Html.ActionLink("Xem", "ThongTinDonHang", new
+                            {
+                                id =
+                           item.ID
+                            }, new { @class = "btn btn-primary" })
+                        </td>
+                        <td>
+                            @Html.ActionLink("Huỷ Đơn", "HuyDonHang", new
+                            {
+                                id =
+                           item.ID
+                            }, new { @class = "btn btn-primary" })
+                        </td>
+
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+

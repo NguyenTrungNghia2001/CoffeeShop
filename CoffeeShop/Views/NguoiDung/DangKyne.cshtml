@@ -1,0 +1,82 @@
+﻿@*@model CoffeeShop.Models.KHACHHANG
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align: center">ĐĂNG KÝ THÀNH VIÊN</h2>
+<br />
+<div class="row">
+    <div class="offset-md-1 col-md-10">
+        @using (Html.BeginForm("DangKy", "NguoiDung"))
+        {
+            @Html.ValidationSummary(true){ <div class="form-group">
+                    <label for="name">Họ và Tên:</label>
+                    @Html.TextBox("TenKH", null, new
+                    {
+                        @class = "form-control",
+                        @id =
+                    "name",
+                        required = "required"
+                    })
+                </div>
+                <div class="form-group">
+                    <label for="dangnhap">Email(Tên đăng nhập):</label>
+                    @Html.TextBox("EmailKH", null, new
+                    {
+                        @class = "form-control",
+                        @id =
+                    "dangnhap",
+                        required = "required"
+                    })
+                </div>
+                <div class="form-group">
+                    <label for="matkhau">Mat khau:</label>
+                    @Html.TextBox("PassKH", null, new
+                    {
+                        @class = "form-control",
+                        
+                   
+                        required = "required"
+                    })
+                </div>
+
+                <div class="form-group">
+                    <label for="diachi">Địa chỉ:</label>
+                    @Html.TextBox("DiaChiKH", null, new
+                    {
+                        @class = "form-control",
+                        @id =
+                    "diachi"
+                    })
+                </div>
+                <div class="form-group">
+                    <label for="dienthoai">Điện thoại:</label>
+                    @Html.TextBox("SDTKH", null, new
+                    {
+                        @class = "form-control",
+                        @id =
+                    "dienthoai",
+                        required = "required"
+                    })
+                </div>
+                <div class="form-group">
+                   
+                    @Html.TextBox("MALKH", 1, new
+                    {
+
+                        @class = "form-control",
+                        @id =
+                    "loaikhachhang",
+                        require = "required",
+                        @style="display:none;"
+                    })
+                </div>
+            }
+
+            <button type="submit" class="btn btn-primary">ĐĂNG KÝ</button>
+        }
+    </div>
+</div>
+
+*@

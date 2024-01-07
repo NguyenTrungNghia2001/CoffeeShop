@@ -1,0 +1,249 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8">
+    <title>PestKit - Pest Control Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="~/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="~/css/style.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <header>
+        <!-- Spinner Start -->
+        <!--<div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>-->
+        <!-- Spinner End -->
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar-top bg-primary" style="background-color: #a04f20 !important;">
+            <div class="container">
+                <div class="d-flex justify-content-between topbar py-2">
+                    <div class="d-flex align-items-center flex-shrink-0 topbar-info">
+                        <a href="#" class="me-4 text-secondary" style="color: #fff !important;"><i style="color: #fff !important;" class="fas fa-map-marker-alt me-2 text-dark"></i>HUFLIT SƯ VẠN HẠNH</a>
+                        <a href="#" class="me-4 text-secondary" style="color: #fff !important;"><i style="color: #fff !important;" class="fas fa-phone-alt me-2 text-dark"></i>+01234567890</a>
+                        <a href="#" class="text-secondary" style="color: #fff !important;"><i style="color: #fff !important;" class="fas fa-envelope me-2 text-dark"></i>Huflit@gmail.com</a>
+                    </div>
+                    <div class="text-end pe-4 me-4 border-end border-dark search-btn">
+                        <div class="search-form">
+    
+                                <div class="form-group">
+                                    <div class="d-flex">
+                                        @using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
+                                        {
+                                            <input type="text" name="sTuKhoa" class="primary"placeholder="Search" style="width: 400px; margin-top: 5PX; border-radius: 10PX; height: 35px; ">
+                                            <input type="submit" value="search" style="border-radius: 10PX">
+                                        }
+                                    </div>
+                                        
+                                </div>
+                         
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center topbar-icon">
+                        <a href="#" class="me-4"><i class="fab fa-facebook-f text-dark"></i></a>
+                        <a href="#" class="me-4"><i class="fab fa-instagram text-dark"></i></a>
+                       
+                        <div class="me-4 dropdown">
+                            <button class="btn btn-f dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user text-dark "></i>
+                            </button>
+
+                            <ul class="dropdown-menu m-0 bg-primary" aria-labelledby="dropdownMenuButton1">
+                                @if (Session["TaiKhoan"] == null)
+                                {
+                                    <li class="dropdown-item bg-primary">
+                                        <a href="@Url.Action("DangNhap","NguoiDung")" style="color:black">Đăng nhập/Đăng Ký</a>
+                                    </li>
+                                    <li class="dropdown-item bg-primary">
+                                        <a href="  @Url.Action("HienThiDonHangKTK", "GioHang")" style="color:black">Đơn hàng Đang đặt</a>
+
+                                    </li>
+
+                                }
+                                else
+                                {
+                                    <li class="dropdown-item"><a class="bg-primary" href="@Url.Action("ThongTinNguoiDung","NguoiDung")" style="color:black;">Thông Tin</a></li>
+                                    <li class="dropdown-item"><a class="bg-primary" href="@Url.Action("LichSuDonHang","NguoiDung")" style="color:black;">Lịch sử đơn hàng</a></li>
+                                    <li class="dropdown-item"><a class="bg-primary" href="@Url.Action("DanhSachLove","NguoiDung")" style="color:black;">Danh Sách Yêu Thích</a></li>
+                                    <li class="dropdown-item"><a class="bg-primary" href="@Url.Action("Logout","NguoiDung")" style="color:black;">Logout</a></li>
+
+                                }
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <a href="@Url.Action("TrangChu", "Home")" class="navbar-brand">
+                        <h1 class="text-primary mb-0 display-5">COFFEE<span class="text-white">SHOP</span><i><img src="~/img/coffee.png" style="width:10%;padding-bottom:20px" />"</i></h1>
+                    </a>
+                    <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-n2" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto" style=" min-width: 650px;">
+                            <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                            <a href="about.html" class="nav-item nav-link">Về Chúng Tôi</a>
+                            <a href="service.html" class="nav-item nav-link">Nghề Nghiệp</a>
+                            <a href="project.html" class="nav-item nav-link">Tin Tức</a>
+                            <div class="nav-item dropdown">
+                                <a href="@Url.Action("Menu", "Home")" class="nav-link dropdown-toggle">Menu</a>
+                                <u class="dropdown-menu m-0 bg-primary">
+                                    @Html.Action("ListMenu", "Home")
+                                </u>
+                            </div>
+                            @Html.Action("GioHangPartial", "GioHang")
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+        <!-- Carousel Start -->
+        <!-- About End -->
+
+
+    </header>
+ 
+
+    <div class="">
+        @RenderBody();
+    </div>
+
+
+
+    <div class="footer" style="position:relative; width:100%; margin-top:-20px">
+        <div id="footer-bg" style="background-image: url(https://tphome.com.vn/vnt_upload/weblink/footer_banner.jpg);">
+            <div class="footer-bg-overlay"></div>
+            <div class="mn-wrapper">
+                <div class="footer-flex">
+                    <div class="info-com f-laptop">
+                        <div class="logo">
+                            <a onmousedown="return rwt(this,'advertise',3)" href="" target="_self" title=""><img src="~/img/coffee.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="info-com" id="footer-col1">
+                        <div class="box-add-ft">
+                            <div class="tt-dt">CHUỖI CỬA HÀNG COFFEE SHOP HỒ CHÍ MINH</div>
+
+                            <p class="tt-of"><span>CỬA HÀNG 1 </span> <a href="" rel="nofollow">Xem chi tiết</a></p>
+
+                            <p class="tt-of"><span>CỬA HÀNG 2 </span> <a href="" rel="nofollow">Xem chi tiết</a></p>
+
+                            <p class="tt-of"><span>CỬA HÀNG 3 </span> <a href="" rel="nofollow">Xem chi tiết</a></p>
+
+                            <p class="tt-of"><span>CỬA HÀNG 4</span> <a href="" rel="nofollow">Xem chi tiết</a></p>
+                        </div>
+                    </div>
+                    <div class="info-com" id="footer-col2">
+                        <div class="center">
+                            <div class="show">
+                                <h5>LINK NHANH</h5>
+                            </div>
+                            <ul class="" style="list-style-type: none;">
+                                <li class="before fa-circle"><a href="" target="_self">Giới thiệu</a></li>
+                                <li class="before fa-circle"><a href="" target="_self">Dịch vụ của TPhome</a></li>
+                                <li class="before fa-circle"><a href="" target="_self">Dự án của TPhome</a></li>
+                                <li class="before fa-circle"><a href="" target="_self">Tin tức</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-com" id="footer-col2">
+                        <div class="center">
+                            <div class="show">
+                                <h5>CHÚNG TÔI TRÊN</h5>
+                            </div>
+                            <ul class="" id="social" style="list-style-type: none;">
+                                <li class="flick"><a href="" target="_blank"><img src="https://tphome.com.vn/vnt_upload/weblink/fb.png" alt="facebook"></a></li>
+                                <li class="flick"><a href="" target="_blank"><img src="https://tphome.com.vn/vnt_upload/weblink/ytb.png" alt="youtube"></a></li>
+                                <li class="flick"><a href="" target="_blank"><img src="https://tphome.com.vn/vnt_upload/weblink/ins.png" alt="instagram"></a></li>
+                                <li class="flick"><a href="" target="_blank"><img src="https://tphome.com.vn/vnt_upload/weblink/flick.png" alt="flick"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <div class="text">
+                    <img src="~/img/paper-plane.png" alt="">
+                    <div class="text-p">
+                        <p class="big">ĐĂNG KÝ NHẬN TIN ƯU ĐÃI</p>
+                        <p class="small">Đăng ký email - Nhận tin ưu đãi từ <span>COFFEESHOP</span></p>
+                    </div>
+                </div>
+                <div class="regtry-info">
+                    <ul class="menu-regtry">
+                        <li>
+                            <div class="ct-menu">
+                                <img src="https://tphome.com.vn/vnt_upload/menu/10_2019/icmenu1.png" alt="Đăng ký tư vấn thiết kế">
+                                <a href="https://tphome.com.vn/vn/dang-ky-tu-van-thiet-ke.html" target="_blank"><span>Đăng ký tư vấn thiết kế</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ct-menu" style="margin-left:40px">
+                                <img src="https://tphome.com.vn/vnt_upload/menu/10_2019/icmenu2.png" alt="Đăng ký nhận báo giá thi công">
+                                <a href="https://tphome.com.vn/vn/dang-ky-bao-gia-thi-cong.html" target="_blank"><span>Đăng ký nhận báo giá thi công</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/wow/wow.min.js"></script>
+    <script src="~/lib/easing/easing.min.js"></script>
+    <script src="~/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+﻿@model CoffeeShop.Models.TINTUC
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="container">
+        <div class=""><h2 style="color:black">Tạo Sản phẩm Mới</h2> </div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.HiddenFor(model => model.IDTINTUC, new { htmlAttributes = new { @class = "form-control" } })
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.TIEUDE, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               <input name="ImageFile" type="file" required />
+               
+                @Html.ValidationMessageFor(model => model.TIEUDE, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+
+            @Html.LabelFor(model => model.HinhAnhTieuDe, "Hình ảnh Tiêu Đề", htmlAttributes: new { @class = "control-label col-md-2" })
+
+            <div class="col-md-10">
+                <button type="button" onclick="BrowseSever()">Chọn hình ảnh</button>
+                <input name="HinhAnhTieuDe" type="text" class="form-control" />
+            </div>
+            @Html.ValidationMessageFor(model => model.HinhAnhTieuDe, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NOIDUNG, "Nội dụng", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+
+                @Html.TextAreaFor(model => model.NOIDUNG, new { @id = "Mota", @clas = "form-control", @row = "200" })
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10" style="margin:10px">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+        }
+
+        <button class="btn" style=" margin:20px">
+            @Html.ActionLink("Back to List", "Index")
+        </button>
+    </div>
+</div>
+
+
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+<link rel="stylesheet" href="~/css/StyleLog.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-boostrap/4.5.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+
+<script src="~/js/AdminJs.js"></script>
+<link rel="stylesheet" href="~/css/AdminStyle.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,700" />
+
+<script src="~/plugin/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    CKEDITOR.replace('Mota');
+    CKEDITOR.editorConfig = function (config) {
+        ignoreEmptyParagraph = true;
+    };
+    function BrowseSever() {
+        var finder = new CKFinder();
+        finder.selectActionFunction = GanUrlChoTruongHinhAnh;
+        finder.popup();
+    }
+    function GanUrlChoTruongHinhAnh(url) {
+        $('input[name=HinhAnhTieuDe]').val(url)
+    }
+</script>

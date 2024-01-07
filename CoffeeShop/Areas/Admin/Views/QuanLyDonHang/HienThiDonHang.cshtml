@@ -1,0 +1,127 @@
+﻿@model CoffeeShop.Models.GIOHANG
+@{
+    ViewBag.Title = "HienThiDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div style="margin: 10px auto; width: 70%;">
+    <h2 style="text-align: center">CHI TIẾT SẢN PHẨM</h2>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Mã đơn hang
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ID)
+            </dd>
+            <dt>
+                Ngày Order
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.NGAYDAT)
+            </dd>
+
+            <dt>
+                Địa chỉ giao hàng
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AddressDeliverry)
+            </dd>
+            <dt>
+                Ngày Giao Hàng
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Ngaygiaohang)
+            </dd>
+            <dt>
+                Trạng Thái Giao Hàng
+            </dt>
+
+            @if (Model.Dagiao == true)
+            {
+                <dd>Đã giao</dd>
+            }
+            else
+            {
+                <dd>Chưa giao</dd>
+
+            }
+
+            <dt>
+                Số điện thoại nhận
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DienThoaiNhan)
+            </dd>
+            <dt>
+                Hình thức thanh toán
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.HTThanhToan)
+            </dd>
+
+            <dt>
+                Hình thức Giao hàng
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.HTGiaoHang)
+            </dd>
+            <dt>
+                GIÁ
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Trigia)
+            </dd>
+            </dt>
+
+            @if (Model.TTrang == true)
+            {
+                <dd>...</dd>
+            }
+            else
+            {
+                <dd><p style="color:red; font-size:50px">X Đơn hàng HUỶ </p></dd>
+
+            }
+
+            <dt>
+        </dl>
+    </div>
+    <div>
+        <h3>DANH SÁCH SẢN PHẨM</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.CHITIETGIOHANGs)
+                {
+                    var tongtien = item.SOLUONG * item.UnitPrice;
+                    <tr>
+                        <td></td>
+                        <td>@item.SANPHAM.TENSP</td>
+                        <td>@item.UnitPrice.Value.ToString("n0")</td>
+                        <td>@item.SOLUONG</td>
+                        <td>@tongtien.Value.ToString("n0")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new
+        {
+            @class
+       = "btn btn-success"
+        }) |
+        @Html.ActionLink("Trở lại", "Index")
+    </p>
+</div>
+<h2>HienThiDonHang</h2>
+

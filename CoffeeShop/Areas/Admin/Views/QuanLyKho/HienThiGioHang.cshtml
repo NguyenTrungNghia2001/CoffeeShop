@@ -1,0 +1,61 @@
+﻿@using CoffeeShop.Models
+@model List<NLXUAT>
+@{
+    ViewBag.Title = "HienThiGioHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<h2 style="text-align:center">THÔNG TIN NHẬP/XUẤT</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã Nguyên liệu</th>
+            <th>Tên Nguyên liệu</th>
+            <th>Số lượng</th>
+            <th>Chi tiết</th>
+            <th>Cập nhật</th>
+            <th>Xóa</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.IdNLKHO</td>
+                <td>@product.TenNLKHO</td>
+
+                @using (Html.BeginForm("CapNhatMatHang", "QuanLyKho", new { IdNL = product.IdNLKHO }))
+                {
+                    <td>
+                        <input type="number" min="1" value="@product.Quantity" name="SoLuong" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Chi tiết", "Detail", "Home", new { id = product.IdNLKHO }, new { @class = "btn btn-success" })
+                    </td>
+                    <td>
+                        <button type="submit" class="btn btn-primary">Cập nhật</button>
+                    </td>
+                }
+                <td>
+                    @Html.ActionLink("Xóa hàng", "XoaMatHang", "QuanLyKho", new { IdNL = product.IdNLKHO }, new { @class = "btn btn-danger" })
+                </td>
+
+            </tr>
+        }
+        <tr style="font-weight:bold; text-align:right; color:red;">
+            <td colspan="5">Tổng số lượng: @ViewBag.TongSL</td>
+        </tr>
+        <tr style="font-weight:bold; text-align:center;">
+            <td colspan="9">
+
+
+
+                @Html.ActionLink("Tạo Hoá Đơn", "DatHang", null, new { @class = "btn btn-primary" })
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table>

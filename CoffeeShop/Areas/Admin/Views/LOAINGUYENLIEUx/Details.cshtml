@@ -1,0 +1,27 @@
+﻿@model CoffeeShop.Models.LOAINGUYENLIEU
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LOAINGUYENLIEU</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenLNL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLNL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDLNL }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLCFModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ADMINuser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TENDANGNHAP" Type="nvarchar" MaxLength="50" />
+    <Property Name="MATKHAU" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CALAMVIEC">
+    <Key>
+      <PropertyRef Name="MACLV" />
+    </Key>
+    <Property Name="MACLV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENCLV" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="GIOBD" Type="time" Precision="7" Nullable="false" />
+    <Property Name="GIOKT" Type="time" Precision="7" Nullable="false" />
+    <Property Name="DiaChiCH" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CHITIETGIOHANG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MASP" Type="int" />
+    <Property Name="SOLUONG" Type="int" />
+    <Property Name="IDGH" Type="int" />
+    <Property Name="TONGTIEN" Type="int" />
+    <Property Name="UnitPrice" Type="int" />
+  </EntityType>
+  <EntityType Name="CHITIETHOADON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MASP" Type="int" />
+    <Property Name="SOLUONG" Type="int" />
+    <Property Name="IDHD" Type="int" />
+    <Property Name="GIATIEN" Type="int" />
+  </EntityType>
+  <EntityType Name="CHITIETHOADONNHAPXUAT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNLKHO" Type="int" />
+    <Property Name="SOLUONG" Type="int" />
+    <Property Name="IDHD" Type="int" />
+  </EntityType>
+  <EntityType Name="CHITIETLUONGNHANVIEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNV" Type="int" />
+    <Property Name="TONGGIOCONG" Type="int" />
+    <Property Name="THANHTIEN" Type="int" />
+    <Property Name="KYLUONG" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="CongThuc">
+    <Key>
+      <PropertyRef Name="IDCT" />
+    </Key>
+    <Property Name="IDCT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MASP" Type="int" />
+    <Property Name="TENSP" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDNL" Type="int" />
+    <Property Name="SOLUONG" Type="int" />
+    <Property Name="DonVi" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CUAHANG">
+    <Key>
+      <PropertyRef Name="DiaChiCH" />
+    </Key>
+    <Property Name="IDCH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiaChiCH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SLNhanVien" Type="int" Nullable="false" />
+    <Property Name="DoanhThu" Type="int" Nullable="false" />
+    <Property Name="IDKHO" Type="int" />
+  </EntityType>
+  <EntityType Name="GIOHANG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NGAYDAT" Type="date" />
+    <Property Name="IDKH" Type="int" />
+    <Property Name="Trigia" Type="money" />
+    <Property Name="AddressDeliverry" Type="nvarchar(max)" />
+    <Property Name="Dagiao" Type="bit" />
+    <Property Name="Ngaygiaohang" Type="smalldatetime" />
+    <Property Name="TenNguoiNhan" Type="nvarchar(max)" />
+    <Property Name="DienThoaiNhan" Type="int" />
+    <Property Name="TTrang" Type="bit" />
+    <Property Name="HTGiaoHang" Type="int" />
+    <Property Name="HTThanhToan" Type="int" />
+    <Property Name="GIAMGIA" Type="int" />
+  </EntityType>
+  <EntityType Name="HOADON">
+    <Key>
+      <PropertyRef Name="IDHD" />
+    </Key>
+    <Property Name="IDHD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDNV" Type="int" Nullable="false" />
+    <Property Name="MAKH" Type="int" />
+    <Property Name="TONGTIEN" Type="int" Nullable="false" />
+    <Property Name="MAGIAMGIA" Type="int" />
+    <Property Name="DIEMTL" Type="int" />
+    <Property Name="TenLKH" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="GIAMGIA" Type="int" />
+    <Property Name="NGAYTAO" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HOADONNHAPXUAT">
+    <Key>
+      <PropertyRef Name="IDHD" />
+    </Key>
+    <Property Name="IDHD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDKHO" Type="int" />
+    <Property Name="DiaChiCH" Type="nvarchar" MaxLength="100" />
+    <Property Name="NGAYXUAT" Type="date" />
+    <Property Name="TONGSOLUONG" Type="int" />
+    <Property Name="NHAPXUAT" Type="bit" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="IDKH" />
+    </Key>
+    <Property Name="IDKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenKH" Type="nvarchar" MaxLength="100" />
+    <Property Name="MALKH" Type="int" Nullable="false" />
+    <Property Name="DiaChiKH" Type="nvarchar" MaxLength="100" />
+    <Property Name="SDTKH" Type="int" />
+    <Property Name="EmailKH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PassKH" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KHOHANG">
+    <Key>
+      <PropertyRef Name="IDKHO" />
+    </Key>
+    <Property Name="IDKHO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiaChiKHO" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="KHUYENMAI">
+    <Key>
+      <PropertyRef Name="IDKM" />
+    </Key>
+    <Property Name="IDKM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENKM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GIAMGIA" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LISTLOVE">
+    <Key>
+      <PropertyRef Name="IDKH" />
+      <PropertyRef Name="IDSP" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDKH" Type="int" Nullable="false" />
+    <Property Name="IDSP" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LOAIKHACHHANG">
+    <Key>
+      <PropertyRef Name="MALKH" />
+    </Key>
+    <Property Name="MALKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenLKH" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="GIAMGIA" Type="int" />
+  </EntityType>
+  <EntityType Name="LOAINGUYENLIEU">
+    <Key>
+      <PropertyRef Name="IDLNL" />
+    </Key>
+    <Property Name="IDLNL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenLNL" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LOAISP">
+    <Key>
+      <PropertyRef Name="MALSP" />
+    </Key>
+    <Property Name="MALSP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENLSP" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="MOTA" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="NGUYENLIEU">
+    <Key>
+      <PropertyRef Name="IDNL" />
+    </Key>
+    <Property Name="IDNL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENNL" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="IDLNL" Type="int" Nullable="false" />
+    <Property Name="SOLUONGTON" Type="int" />
+  </EntityType>
+  <EntityType Name="NGUYENLIEUKHO">
+    <Key>
+      <PropertyRef Name="IDNLKHO" />
+    </Key>
+    <Property Name="IDNLKHO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENNLKHO" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="IDLNL" Type="int" Nullable="false" />
+    <Property Name="SOLUONGTON" Type="int" />
+    <Property Name="IDKHO" Type="int" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="IDNV" />
+    </Key>
+    <Property Name="IDNV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HOVATEN" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="NGAYSINH" Type="date" Nullable="false" />
+    <Property Name="SDT" Type="int" Nullable="false" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="CHUCVU" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="MUCLUONG" Type="float" Nullable="false" />
+    <Property Name="PASSWORD" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="DiaChiCH" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="SANPHAM">
+    <Key>
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="MASP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENSP" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="LOAISP" Type="int" />
+    <Property Name="IDNL" Type="int" />
+    <Property Name="SLUONG" Type="int" />
+    <Property Name="HINHANH" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="GIASP" Type="int" />
+    <Property Name="DiaChiCH" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mota" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="TINTUC">
+    <Key>
+      <PropertyRef Name="IDTINTUC" />
+    </Key>
+    <Property Name="TIEUDE" Type="nvarchar" MaxLength="100" />
+    <Property Name="NOIDUNG" Type="nvarchar" MaxLength="1000" />
+    <Property Name="HinhAnhTieuDe" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="IDTINTUC" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NGAYDANG" Type="date" />
+  </EntityType>
+  <Association Name="FK__CALAMVIEC__DiaCh__7B5B524B">
+    <End Role="CUAHANG" Type="Self.CUAHANG" Multiplicity="0..1" />
+    <End Role="CALAMVIEC" Type="Self.CALAMVIEC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUAHANG">
+        <PropertyRef Name="DiaChiCH" />
+      </Principal>
+      <Dependent Role="CALAMVIEC">
+        <PropertyRef Name="DiaChiCH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CHITIETGIO__IDGH__7C4F7684">
+    <End Role="GIOHANG" Type="Self.GIOHANG" Multiplicity="0..1" />
+    <End Role="CHITIETGIOHANG" Type="Self.CHITIETGIOHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIOHANG">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CHITIETGIOHANG">
+        <PropertyRef Name="IDGH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CHITIETGIO__MASP__7D439ABD">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="0..1" />
+    <End Role="CHITIETGIOHANG" Type="Self.CHITIETGIOHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="CHITIETGIOHANG">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CHITIETHO__IDNLK__00200768">
+    <End Role="NGUYENLIEUKHO" Type="Self.NGUYENLIEUKHO" Multiplicity="0..1" />
+    <End Role="CHITIETHOADONNHAPXUAT" Type="Self.CHITIETHOADONNHAPXUAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUYENLIEUKHO">
+        <PropertyRef Name="IDNLKHO" />
+      </Principal>
+      <Dependent Role="CHITIETHOADONNHAPXUAT">
+        <PropertyRef Name="IDNLKHO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CHITIETHOA__IDHD__01142BA1">
+    <End Role="HOADONNHAPXUAT" Type="Self.HOADONNHAPXUAT" Multiplicity="0..1" />
+    <End Role="CHITIETHOADONNHAPXUAT" Type="Self.CHITIETHOADONNHAPXUAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HOADONNHAPXUAT">
+        <PropertyRef Name="IDHD" />
+      </Principal>
+      <Dependent Role="CHITIETHOADONNHAPXUAT">
+        <PropertyRef Name="IDHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CHITIETHOA__IDHD__7E37BEF6">
+    <End Role="HOADON" Type="Self.HOADON" Multiplicity="0..1" />
+    <End Role="CHITIETHOADON" Type="Self.CHITIETHOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HOADON">
+        <PropertyRef Name="IDHD" />
+      </Principal>
+      <Dependent Role="CHITIETHOADON">
+        <PropertyRef Name="IDHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CHITIETHOA__MASP__7F2BE32F">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="0..1" />
+    <End Role="CHITIETHOADON" Type="Self.CHITIETHOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="CHITIETHOADON">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CongThuc__IDNL__03F0984C">
+    <End Role="NGUYENLIEU" Type="Self.NGUYENLIEU" Multiplicity="0..1" />
+    <End Role="CongThuc" Type="Self.CongThuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUYENLIEU">
+        <PropertyRef Name="IDNL" />
+      </Principal>
+      <Dependent Role="CongThuc">
+        <PropertyRef Name="IDNL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CongThuc__MASP__02FC7413">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="0..1" />
+    <End Role="CongThuc" Type="Self.CongThuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="CongThuc">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CUAHANG__IDKHO__04E4BC85">
+    <End Role="KHOHANG" Type="Self.KHOHANG" Multiplicity="0..1" />
+    <End Role="CUAHANG" Type="Self.CUAHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHOHANG">
+        <PropertyRef Name="IDKHO" />
+      </Principal>
+      <Dependent Role="CUAHANG">
+        <PropertyRef Name="IDKHO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GIOHANG__GIAMGIA__05D8E0BE">
+    <End Role="KHUYENMAI" Type="Self.KHUYENMAI" Multiplicity="0..1" />
+    <End Role="GIOHANG" Type="Self.GIOHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHUYENMAI">
+        <PropertyRef Name="IDKM" />
+      </Principal>
+      <Dependent Role="GIOHANG">
+        <PropertyRef Name="GIAMGIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GIOHANG__IDKH__06CD04F7">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="0..1" />
+    <End Role="GIOHANG" Type="Self.GIOHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="GIOHANG">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HOADON__IDNV__07C12930">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1" />
+    <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HOADON__MAKH__08B54D69">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="0..1" />
+    <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="MAKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HOADONNHA__DiaCh__0B91BA14">
+    <End Role="CUAHANG" Type="Self.CUAHANG" Multiplicity="0..1" />
+    <End Role="HOADONNHAPXUAT" Type="Self.HOADONNHAPXUAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUAHANG">
+        <PropertyRef Name="DiaChiCH" />
+      </Principal>
+      <Dependent Role="HOADONNHAPXUAT">
+        <PropertyRef Name="DiaChiCH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HOADONNHA__IDKHO__0A9D95DB">
+    <End Role="KHOHANG" Type="Self.KHOHANG" Multiplicity="0..1" />
+    <End Role="HOADONNHAPXUAT" Type="Self.HOADONNHAPXUAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHOHANG">
+        <PropertyRef Name="IDKHO" />
+      </Principal>
+      <Dependent Role="HOADONNHAPXUAT">
+        <PropertyRef Name="IDKHO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LISTLOVE__IDKH__0E6E26BF">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+    <End Role="LISTLOVE" Type="Self.LISTLOVE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="LISTLOVE">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LISTLOVE__IDSP__0D7A0286">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
+    <End Role="LISTLOVE" Type="Self.LISTLOVE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="LISTLOVE">
+        <PropertyRef Name="IDSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NGUYENLIE__IDKHO__10566F31">
+    <End Role="KHOHANG" Type="Self.KHOHANG" Multiplicity="0..1" />
+    <End Role="NGUYENLIEUKHO" Type="Self.NGUYENLIEUKHO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHOHANG">
+        <PropertyRef Name="IDKHO" />
+      </Principal>
+      <Dependent Role="NGUYENLIEUKHO">
+        <PropertyRef Name="IDKHO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NGUYENLIE__IDLNL__0F624AF8">
+    <End Role="LOAINGUYENLIEU" Type="Self.LOAINGUYENLIEU" Multiplicity="1" />
+    <End Role="NGUYENLIEU" Type="Self.NGUYENLIEU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAINGUYENLIEU">
+        <PropertyRef Name="IDLNL" />
+      </Principal>
+      <Dependent Role="NGUYENLIEU">
+        <PropertyRef Name="IDLNL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NGUYENLIE__IDLNL__114A936A">
+    <End Role="LOAINGUYENLIEU" Type="Self.LOAINGUYENLIEU" Multiplicity="1" />
+    <End Role="NGUYENLIEUKHO" Type="Self.NGUYENLIEUKHO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAINGUYENLIEU">
+        <PropertyRef Name="IDLNL" />
+      </Principal>
+      <Dependent Role="NGUYENLIEUKHO">
+        <PropertyRef Name="IDLNL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NHANVIEN__DiaChi__123EB7A3">
+    <End Role="CUAHANG" Type="Self.CUAHANG" Multiplicity="0..1" />
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUAHANG">
+        <PropertyRef Name="DiaChiCH" />
+      </Principal>
+      <Dependent Role="NHANVIEN">
+        <PropertyRef Name="DiaChiCH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SANPHAM__DiaChiC__1332DBDC">
+    <End Role="CUAHANG" Type="Self.CUAHANG" Multiplicity="0..1" />
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CUAHANG">
+        <PropertyRef Name="DiaChiCH" />
+      </Principal>
+      <Dependent Role="SANPHAM">
+        <PropertyRef Name="DiaChiCH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SANPHAM__IDNL__14270015">
+    <End Role="NGUYENLIEU" Type="Self.NGUYENLIEU" Multiplicity="0..1" />
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUYENLIEU">
+        <PropertyRef Name="IDNL" />
+      </Principal>
+      <Dependent Role="SANPHAM">
+        <PropertyRef Name="IDNL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SANPHAM__LOAISP__151B244E">
+    <End Role="LOAISP" Type="Self.LOAISP" Multiplicity="0..1" />
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAISP">
+        <PropertyRef Name="MALSP" />
+      </Principal>
+      <Dependent Role="SANPHAM">
+        <PropertyRef Name="LOAISP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDNV">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="0..1" />
+    <End Role="CHITIETLUONGNHANVIEN" Type="Self.CHITIETLUONGNHANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="CHITIETLUONGNHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KHACHHANG_MALKH">
+    <End Role="LOAIKHACHHANG" Type="Self.LOAIKHACHHANG" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIKHACHHANG">
+        <PropertyRef Name="MALKH" />
+      </Principal>
+      <Dependent Role="KHACHHANG">
+        <PropertyRef Name="MALKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MAGIAMGIA">
+    <End Role="KHUYENMAI" Type="Self.KHUYENMAI" Multiplicity="0..1" />
+    <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHUYENMAI">
+        <PropertyRef Name="IDKM" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="MAGIAMGIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetRevenuesStatistic" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="QLCFModelStoreContainer">
+    <EntitySet Name="ADMINuser" EntityType="Self.ADMINuser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CALAMVIEC" EntityType="Self.CALAMVIEC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHITIETGIOHANG" EntityType="Self.CHITIETGIOHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHITIETHOADON" EntityType="Self.CHITIETHOADON" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHITIETHOADONNHAPXUAT" EntityType="Self.CHITIETHOADONNHAPXUAT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHITIETLUONGNHANVIEN" EntityType="Self.CHITIETLUONGNHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CongThuc" EntityType="Self.CongThuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CUAHANG" EntityType="Self.CUAHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIOHANG" EntityType="Self.GIOHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOADONNHAPXUAT" EntityType="Self.HOADONNHAPXUAT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHOHANG" EntityType="Self.KHOHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHUYENMAI" EntityType="Self.KHUYENMAI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LISTLOVE" EntityType="Self.LISTLOVE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOAIKHACHHANG" EntityType="Self.LOAIKHACHHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOAINGUYENLIEU" EntityType="Self.LOAINGUYENLIEU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOAISP" EntityType="Self.LOAISP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NGUYENLIEU" EntityType="Self.NGUYENLIEU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NGUYENLIEUKHO" EntityType="Self.NGUYENLIEUKHO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SANPHAM" EntityType="Self.SANPHAM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TINTUC" EntityType="Self.TINTUC" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__CALAMVIEC__DiaCh__7B5B524B" Association="Self.FK__CALAMVIEC__DiaCh__7B5B524B">
+      <End Role="CUAHANG" EntitySet="CUAHANG" />
+      <End Role="CALAMVIEC" EntitySet="CALAMVIEC" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CHITIETGIO__IDGH__7C4F7684" Association="Self.FK__CHITIETGIO__IDGH__7C4F7684">
+      <End Role="GIOHANG" EntitySet="GIOHANG" />
+      <End Role="CHITIETGIOHANG" EntitySet="CHITIETGIOHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CHITIETGIO__MASP__7D439ABD" Association="Self.FK__CHITIETGIO__MASP__7D439ABD">
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+      <End Role="CHITIETGIOHANG" EntitySet="CHITIETGIOHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CHITIETHO__IDNLK__00200768" Association="Self.FK__CHITIETHO__IDNLK__00200768">
+      <End Role="NGUYENLIEUKHO" EntitySet="NGUYENLIEUKHO" />
+      <End Role="CHITIETHOADONNHAPXUAT" EntitySet="CHITIETHOADONNHAPXUAT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CHITIETHOA__IDHD__01142BA1" Association="Self.FK__CHITIETHOA__IDHD__01142BA1">
+      <End Role="HOADONNHAPXUAT" EntitySet="HOADONNHAPXUAT" />
+      <End Role="CHITIETHOADONNHAPXUAT" EntitySet="CHITIETHOADONNHAPXUAT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CHITIETHOA__IDHD__7E37BEF6" Association="Self.FK__CHITIETHOA__IDHD__7E37BEF6">
+      <End Role="HOADON" EntitySet="HOADON" />
+      <End Role="CHITIETHOADON" EntitySet="CHITIETHOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CHITIETHOA__MASP__7F2BE32F" Association="Self.FK__CHITIETHOA__MASP__7F2BE32F">
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+      <End Role="CHITIETHOADON" EntitySet="CHITIETHOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CongThuc__IDNL__03F0984C" Association="Self.FK__CongThuc__IDNL__03F0984C">
+      <End Role="NGUYENLIEU" EntitySet="NGUYENLIEU" />
+      <End Role="CongThuc" EntitySet="CongThuc" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CongThuc__MASP__02FC7413" Association="Self.FK__CongThuc__MASP__02FC7413">
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+      <End Role="CongThuc" EntitySet="CongThuc" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CUAHANG__IDKHO__04E4BC85" Association="Self.FK__CUAHANG__IDKHO__04E4BC85">
+      <End Role="KHOHANG" EntitySet="KHOHANG" />
+      <End Role="CUAHANG" EntitySet="CUAHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GIOHANG__GIAMGIA__05D8E0BE" Association="Self.FK__GIOHANG__GIAMGIA__05D8E0BE">
+      <End Role="KHUYENMAI" EntitySet="KHUYENMAI" />
+      <End Role="GIOHANG" EntitySet="GIOHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GIOHANG__IDKH__06CD04F7" Association="Self.FK__GIOHANG__IDKH__06CD04F7">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="GIOHANG" EntitySet="GIOHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HOADON__IDNV__07C12930" Association="Self.FK__HOADON__IDNV__07C12930">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="HOADON" EntitySet="HOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HOADON__MAKH__08B54D69" Association="Self.FK__HOADON__MAKH__08B54D69">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="HOADON" EntitySet="HOADON" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HOADONNHA__DiaCh__0B91BA14" Association="Self.FK__HOADONNHA__DiaCh__0B91BA14">
+      <End Role="CUAHANG" EntitySet="CUAHANG" />
+      <End Role="HOADONNHAPXUAT" EntitySet="HOADONNHAPXUAT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HOADONNHA__IDKHO__0A9D95DB" Association="Self.FK__HOADONNHA__IDKHO__0A9D95DB">
+      <End Role="KHOHANG" EntitySet="KHOHANG" />
+      <End Role="HOADONNHAPXUAT" EntitySet="HOADONNHAPXUAT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LISTLOVE__IDKH__0E6E26BF" Association="Self.FK__LISTLOVE__IDKH__0E6E26BF">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="LISTLOVE" EntitySet="LISTLOVE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LISTLOVE__IDSP__0D7A0286" Association="Self.FK__LISTLOVE__IDSP__0D7A0286">
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+      <End Role="LISTLOVE" EntitySet="LISTLOVE" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NGUYENLIE__IDKHO__10566F31" Association="Self.FK__NGUYENLIE__IDKHO__10566F31">
+      <End Role="KHOHANG" EntitySet="KHOHANG" />
+      <End Role="NGUYENLIEUKHO" EntitySet="NGUYENLIEUKHO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NGUYENLIE__IDLNL__0F624AF8" Association="Self.FK__NGUYENLIE__IDLNL__0F624AF8">
+      <End Role="LOAINGUYENLIEU" EntitySet="LOAINGUYENLIEU" />
+      <End Role="NGUYENLIEU" EntitySet="NGUYENLIEU" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NGUYENLIE__IDLNL__114A936A" Association="Self.FK__NGUYENLIE__IDLNL__114A936A">
+      <End Role="LOAINGUYENLIEU" EntitySet="LOAINGUYENLIEU" />
+      <End Role="NGUYENLIEUKHO" EntitySet="NGUYENLIEUKHO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NHANVIEN__DiaChi__123EB7A3" Association="Self.FK__NHANVIEN__DiaChi__123EB7A3">
+      <End Role="CUAHANG" EntitySet="CUAHANG" />
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SANPHAM__DiaChiC__1332DBDC" Association="Self.FK__SANPHAM__DiaChiC__1332DBDC">
+      <End Role="CUAHANG" EntitySet="CUAHANG" />
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SANPHAM__IDNL__14270015" Association="Self.FK__SANPHAM__IDNL__14270015">
+      <End Role="NGUYENLIEU" EntitySet="NGUYENLIEU" />
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SANPHAM__LOAISP__151B244E" Association="Self.FK__SANPHAM__LOAISP__151B244E">
+      <End Role="LOAISP" EntitySet="LOAISP" />
+      <End Role="SANPHAM" EntitySet="SANPHAM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDNV" Association="Self.FK_IDNV">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="CHITIETLUONGNHANVIEN" EntitySet="CHITIETLUONGNHANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KHACHHANG_MALKH" Association="Self.FK_KHACHHANG_MALKH">
+      <End Role="LOAIKHACHHANG" EntitySet="LOAIKHACHHANG" />
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MAGIAMGIA" Association="Self.FK_MAGIAMGIA">
+      <End Role="KHUYENMAI" EntitySet="KHUYENMAI" />
+      <End Role="HOADON" EntitySet="HOADON" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

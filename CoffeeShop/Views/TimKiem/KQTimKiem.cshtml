@@ -1,0 +1,66 @@
+﻿@using CoffeeShop.Models
+
+@using PagedList.Mvc
+@model PagedList.PagedList<SANPHAM>
+@{
+    ViewBag.Title = "KQTimKiem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" style="margin:30px">
+    <div class="col-sm-1"></div>
+  
+    @foreach (var product in Model)
+    {
+
+        <div class="card col-sm d-flex align-items-stretch book-section" style="margin:5px;">
+
+            <div class="u-container-style u-products-item u-repeater-item">
+                <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1">
+                    <!--product_image-->
+                    <img src="@Url.Content(product.HINHANH)" alt="" class="u-expanded-width-lg u-image u-image-contain u-image-default
+                         u-product-control u-image-1" data-image-width="1230" data-image-height="1223" style="margin-top:20px;border-radius:10px;">
+                    <h4 class="u-product-control u-text u-text-1" style="color: black; background-color: yellow; border-radius: 10px; text-align: center;">
+                        <a class="u-product-title-link" href="@Url.Action("Detail", "Home", new {id = product.MASP})" style="color:black">@product.TENSP</a>
+                    </h4>
+                    <div class="u-product-control u-product-desc u-text u-text-2">Sample text. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</div>
+                    <div class="u-product-control u-product-price u-product-price-1" style="color: black; background-color: yellow; border-radius: 10px; text-align: center;">
+                        <div class="u-price-wrapper u-spacing-10">
+                            <div class="u-price" style="font-size: 1.25rem; font-weight: 700; color:black;">@product.GIASP</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm d-flex align-items-stretch book-section" style="background-color:yellow">
+                <a href="@Url.Action("ThemSanPhamVaoGio", "GioHang", new { MaSP = product.MASP })" class="u-active-grey-75 u-black u-border-none 
+                   u-btn u-button-style u-hover-grey-75 u-product-control u-btn-1 u-dialog-link u-payment-button" style="color:black; margin-left:30%;">Add to cart</a>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+
+
+    }
+    <div class="col-sm-1"></div>
+</div>
+
+<div class="col-sm-1"></div>
+<br />
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("KQTimKiem", new { page = page, @sTuKhoa = ViewBag.TuKhoa }))
+   
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<script src="~/js/scriptList.js"></script>
+<link rel="stylesheet" href="~/css/styleList.css">

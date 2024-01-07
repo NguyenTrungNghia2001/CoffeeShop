@@ -1,0 +1,75 @@
+﻿@model CoffeeShop.Models.SANPHAM
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SANPHAM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TENSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SLUONG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SLUONG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HINHANH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HINHANH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GIASP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GIASP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CUAHANG.DiaChiCH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CUAHANG.DiaChiCH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOAISP1.TENLSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAISP1.TENLSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NGUYENLIEU.TENNL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGUYENLIEU.TENNL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MASP }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
